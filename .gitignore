@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+.venv/
+.env*
+!.env.example
+*.private.json
+*.qdays
+.claude/settings.local.json
+.claude/*.local.md

@@ -1,0 +1,5 @@
+
+> quiet-days@0.1.0 test:ui
+> python tests/e2e/ui_test.py
+
+{"passed": 31, "failed": 0, "mode": "isolated-component-DOM; not served-origin E2E"}

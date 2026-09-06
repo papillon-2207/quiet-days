@@ -1,0 +1,22 @@
+{
+  "name": "quiet-days",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "留白：低負擔、離線優先、無帳號的個人身體與週期日誌",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs . 4173",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist 4173",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/unit/*.test.mjs",
+    "test:browser": "python tests/e2e/browser_test.py",
+    "verify": "npm run check && npm test && npm run build && npm run test:ui",
+    "test:ui": "python tests/e2e/ui_test.py",
+    "verify:release": "npm run verify && npm run test:browser"
+  },
+  "license": "MIT"
+}

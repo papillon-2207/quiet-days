@@ -1,0 +1,929 @@
+[
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "U1/A1",
+    "requirement": "不是靠不舒服猜經期；出血與症狀分開",
+    "status": "已實作",
+    "implementation": "domain/model.js; domain/analysis.js",
+    "verification": "Node",
+    "id": "QD-001"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1/A2",
+    "requirement": "未填、未問、不確定、明確沒有、出現分離",
+    "status": "已實作",
+    "implementation": "domain/model.js; domain/analysis.js",
+    "verification": "Node + DOM",
+    "id": "QD-002"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "出血五態，不要求視覺、顏色或照片",
+    "status": "已實作",
+    "implementation": "components/editor.js",
+    "verification": "DOM 部分；人工待驗",
+    "id": "QD-003"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "只有使用者確認出血與開始，才能成為週期錨點",
+    "status": "已實作",
+    "implementation": "domain/model.js; domain/analysis.js",
+    "verification": "Node + DOM",
+    "id": "QD-004"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "流量、漏出、用品更換可選；不是精確失血量",
+    "status": "已實作",
+    "implementation": "components/editor.js",
+    "verification": "原始碼；人工待驗",
+    "id": "QD-005"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "頭痛、疲倦、睡眠、腹部、GI、情緒、專注、其他",
+    "status": "已實作",
+    "implementation": "domain/model.js; components/editor.js",
+    "verification": "Node + DOM",
+    "id": "QD-006"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "頭痛時間、影響、持續、位置、伴隨症狀",
+    "status": "有限",
+    "implementation": "components/editor.js",
+    "verification": "每日摘要；非一天多場事件",
+    "id": "QD-007"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "腸胃與腹部疼痛不得混成同一項",
+    "status": "已實作",
+    "implementation": "domain/model.js",
+    "verification": "Node",
+    "id": "QD-008"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "功能影響四級與不確定，不用強制 1–10 滑桿",
+    "status": "已實作",
+    "implementation": "components/editor.js",
+    "verification": "DOM",
+    "id": "QD-009"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "睡眠、壓力、疾病、藥物改變選填",
+    "status": "已實作",
+    "implementation": "domain/model.js; components/editor.js",
+    "verification": "Node；人工待驗",
+    "id": "QD-010"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "休息、處置、效果等選填背景",
+    "status": "有限",
+    "implementation": "components/editor.js",
+    "verification": "文字＋效果選項；非結構化用藥系統",
+    "id": "QD-011"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "GI 子類／疼痛位置／伴隨狀況可補充",
+    "status": "有限",
+    "implementation": "components/editor.js",
+    "verification": "自由文字，非專屬臨床量表",
+    "id": "QD-012"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "更正過去出血日期，重新計算",
+    "status": "已實作",
+    "implementation": "domain/model.js; app.js",
+    "verification": "Node + DOM 部分",
+    "id": "QD-013"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1/A2",
+    "requirement": "不以未開 App 推定 fatigue/PMS",
+    "status": "已實作",
+    "implementation": "domain/analysis.js",
+    "verification": "Node；無使用遙測",
+    "id": "QD-014"
+  },
+  {
+    "group": "A. 定位、資料意義與症狀",
+    "origin": "A1",
+    "requirement": "雙時間軸、四類資訊的可理解紀錄",
+    "status": "已實作",
+    "implementation": "components/insights.js; domain/export.js",
+    "verification": "文字與表格；非視覺圖表",
+    "id": "QD-015"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "U2/A2",
+    "requirement": "Capture → Enrich → Verify",
+    "status": "已實作",
+    "implementation": "components/home.js; components/editor.js",
+    "verification": "DOM",
+    "id": "QD-016"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "解鎖後一個動作留下有不適記號",
+    "status": "已實作",
+    "implementation": "components/home.js",
+    "verification": "DOM；真人秒數未測",
+    "id": "QD-017"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "沒有不適、不確定、先略過皆有效",
+    "status": "已實作",
+    "implementation": "domain/model.js; components/home.js",
+    "verification": "Node + DOM",
+    "id": "QD-018"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "不想分類也能完成，不強迫文字或原因",
+    "status": "已實作",
+    "implementation": "components/home.js",
+    "verification": "DOM",
+    "id": "QD-019"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "前兩題優先活動影響與大約時間",
+    "status": "已實作",
+    "implementation": "components/editor.js",
+    "verification": "DOM",
+    "id": "QD-020"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "每步保存、可復原，錯誤保留最新輸入",
+    "status": "已實作",
+    "implementation": "components/editor.js; lib/storage.js",
+    "verification": "Node + DOM；真實 IDB 待驗",
+    "id": "QD-021"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "離頁先完成寫入，不蓋掉更晚編輯",
+    "status": "已實作",
+    "implementation": "app.js; components/editor.js",
+    "verification": "DOM",
+    "id": "QD-022"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "待補充不是欠交，不批量責備漏記",
+    "status": "已實作",
+    "implementation": "components/home.js",
+    "verification": "原始碼 + DOM",
+    "id": "QD-023"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "補昨天入口，不必找月曆",
+    "status": "已實作",
+    "implementation": "components/home.js",
+    "verification": "DOM",
+    "id": "QD-024"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "依日期一次補一天，允許不確定",
+    "status": "已實作",
+    "implementation": "components/editor.js",
+    "verification": "DOM",
+    "id": "QD-025"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "確認開始後中立回顧最近 1–3 天",
+    "status": "已實作",
+    "implementation": "components/home.js",
+    "verification": "DOM",
+    "id": "QD-026"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "可關閉開始後回顧",
+    "status": "已實作",
+    "implementation": "components/settings.js",
+    "verification": "原始碼；人工待驗",
+    "id": "QD-027"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "發生日期和實際輸入時間分開",
+    "status": "已實作",
+    "implementation": "domain/model.js",
+    "verification": "Node",
+    "id": "QD-028"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "每欄位當日／隔日／更晚來源與開始後回顧",
+    "status": "已實作",
+    "implementation": "domain/model.js",
+    "verification": "Node + DOM",
+    "id": "QD-029"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "時間精確度、確定程度、部分狀態、確認",
+    "status": "已實作",
+    "implementation": "components/editor.js; domain/model.js",
+    "verification": "Node + DOM 部分",
+    "id": "QD-030"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "修正歷史不是靜默覆寫",
+    "status": "已實作",
+    "implementation": "domain/model.js",
+    "verification": "Node；不是不可竄改臨床 audit",
+    "id": "QD-031"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "2 操作、5–10 秒最低紀錄",
+    "status": "待使用者驗證",
+    "implementation": "docs/ACCESSIBILITY_ACCEPTANCE.md",
+    "verification": "僅解鎖後目標；非測得結果",
+    "id": "QD-032"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "同一天可多次獨立症狀事件",
+    "status": "後續",
+    "implementation": "docs/ROADMAP.md",
+    "verification": "目前每日摘要＋修正歷史",
+    "id": "QD-033"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "只記得一段日期範圍的補登",
+    "status": "後續",
+    "implementation": "docs/ROADMAP.md",
+    "verification": "目前需選一天，可標不確定",
+    "id": "QD-034"
+  },
+  {
+    "group": "B. 低能量紀錄與補登",
+    "origin": "A2",
+    "requirement": "自動挑最有資訊題目的 JITA-EMA",
+    "status": "後續／需驗證",
+    "implementation": "docs/ROADMAP.md",
+    "verification": "目前由使用者選症狀，非自適應量測",
+    "id": "QD-035"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1",
+    "requirement": "預估範圍而非唯一到來日期",
+    "status": "已實作",
+    "implementation": "domain/analysis.js",
+    "verification": "Node",
+    "id": "QD-036"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1",
+    "requirement": "資料不足、漏記、差異大就暫停",
+    "status": "已實作",
+    "implementation": "domain/analysis.js",
+    "verification": "Node",
+    "id": "QD-037"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1",
+    "requirement": "只用個人已確認區間，不預設 28 天",
+    "status": "已實作",
+    "implementation": "domain/analysis.js",
+    "verification": "Node",
+    "id": "QD-038"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1",
+    "requirement": "顯示方法與資料量，避免假高／中信心",
+    "status": "已實作並修正原建議",
+    "implementation": "components/insights.js",
+    "verification": "Node + DOM",
+    "id": "QD-039"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1",
+    "requirement": "每類症狀獨立比較經前與其他日",
+    "status": "已實作",
+    "implementation": "domain/analysis.js",
+    "verification": "Node",
+    "id": "QD-040"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1/A2",
+    "requirement": "觀察分母、缺失、回憶數透明",
+    "status": "已實作",
+    "implementation": "domain/analysis.js; components/insights.js",
+    "verification": "Node",
+    "id": "QD-041"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1",
+    "requirement": "睡眠／壓力／用藥作為可能背景，不斷言因果",
+    "status": "有限",
+    "implementation": "components/editor.js; domain/analysis.js",
+    "verification": "能記；未做統計混淆校正",
+    "id": "QD-042"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1/A2",
+    "requirement": "不診斷 PMS/PMDD、不宣告經期偏頭痛",
+    "status": "已實作邊界",
+    "implementation": "components/safety.js; docs/MEDICAL_BOUNDARIES.md",
+    "verification": "原始碼與文案",
+    "id": "QD-043"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A2",
+    "requirement": "個人簡化日誌與正式量表不混用",
+    "status": "已實作邊界",
+    "implementation": "docs/MEDICAL_BOUNDARIES.md",
+    "verification": "本版只有個人模式",
+    "id": "QD-044"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A2",
+    "requirement": "正式 DRSP 內容、順序、回憶期與計分原樣有效",
+    "status": "後續／臨床合作",
+    "implementation": "docs/ROADMAP.md",
+    "verification": "沒有偽造臨床模式按鈕",
+    "id": "QD-045"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1",
+    "requirement": "新劇烈頭痛、出血、腹痛與精神危機安全資訊",
+    "status": "已實作",
+    "implementation": "components/safety.js",
+    "verification": "DOM；臨床文案待專業審閱",
+    "id": "QD-046"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1/A2",
+    "requirement": "未解鎖／存檔失敗也可求助",
+    "status": "已實作",
+    "implementation": "app.js; components/editor.js",
+    "verification": "DOM",
+    "id": "QD-047"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1",
+    "requirement": "提供醫療分享摘要與來源限制",
+    "status": "已實作",
+    "implementation": "domain/export.js",
+    "verification": "Node + DOM",
+    "id": "QD-048"
+  },
+  {
+    "group": "C. 描述、模式與醫療边界",
+    "origin": "A1",
+    "requirement": "不做排卵、安全期、生育／懷孕推論",
+    "status": "排除",
+    "implementation": "docs/MEDICAL_BOUNDARIES.md",
+    "verification": "無此功能",
+    "id": "QD-049"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1/A2",
+    "requirement": "線性導覽；日曆不是唯一入口",
+    "status": "已實作",
+    "implementation": "app.js; components/home.js",
+    "verification": "DOM",
+    "id": "QD-050"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1/A2",
+    "requirement": "控制有名稱、角色、狀態與讀屏可及資訊",
+    "status": "已實作待完整驗收",
+    "implementation": "lib/dom.js; components/*.js",
+    "verification": "DOM 部分；VoiceOver/TalkBack 待測",
+    "id": "QD-051"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1/A2",
+    "requirement": "狀態與錯誤可朗讀、焦點合理",
+    "status": "已實作待完整驗收",
+    "implementation": "lib/dom.js; app.js",
+    "verification": "DOM 焦點；真讀屏待測",
+    "id": "QD-052"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1",
+    "requirement": "所有模式都有文字等價資訊",
+    "status": "已實作",
+    "implementation": "components/insights.js",
+    "verification": "DOM",
+    "id": "QD-053"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1/A2",
+    "requirement": "大字、高對比、小螢幕重排",
+    "status": "已實作",
+    "implementation": "styles.css; components/settings.js",
+    "verification": "320 CSS px DOM；實機待測",
+    "id": "QD-054"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1/A2",
+    "requirement": "鍵盤、不只拖曳／長按、避免滑桿負擔",
+    "status": "已實作待完整驗收",
+    "implementation": "components/*.js",
+    "verification": "原生控制；人工全流程待測",
+    "id": "QD-055"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1",
+    "requirement": "點字顯示器可用性",
+    "status": "待實機驗證",
+    "implementation": "docs/ACCESSIBILITY_ACCEPTANCE.md",
+    "verification": "沒有宣稱已驗證",
+    "id": "QD-056"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1/A2",
+    "requirement": "震動不是唯一回饋",
+    "status": "已實作邊界",
+    "implementation": "lib/dom.js",
+    "verification": "本版不使用震動",
+    "id": "QD-057"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1",
+    "requirement": "符合 WCAG 2.2 AA",
+    "status": "目標／未認證",
+    "implementation": "docs/ACCESSIBILITY_ACCEPTANCE.md",
+    "verification": "沒有完整稽核證書",
+    "id": "QD-058"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1/A2",
+    "requirement": "不幼兒化、不羞辱、不預設情緒就是 PMS",
+    "status": "已實作文案",
+    "implementation": "components/*.js",
+    "verification": "仍需共創確認",
+    "id": "QD-059"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1/A2",
+    "requirement": "無打卡、紅色欠交或失去徽章懲罰",
+    "status": "已實作邊界",
+    "implementation": "components/home.js",
+    "verification": "原始碼",
+    "id": "QD-060"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1",
+    "requirement": "稱呼可自訂，無強制粉紅／生育意象",
+    "status": "已實作",
+    "implementation": "components/settings.js; styles.css",
+    "verification": "DOM；醫療頁保留準確稱呼",
+    "id": "QD-061"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1",
+    "requirement": "不預設性別認同、婚育或照顧者共享",
+    "status": "已實作邊界",
+    "implementation": "components/*.js",
+    "verification": "無人口或伴侶必填",
+    "id": "QD-062"
+  },
+  {
+    "group": "D. 視障、低視能與尊重",
+    "origin": "A1/A2",
+    "requirement": "版本更動後無障礙回歸",
+    "status": "已提供流程",
+    "implementation": "tests/e2e; docs/ACCESSIBILITY_ACCEPTANCE.md",
+    "verification": "自動部分＋待人工",
+    "id": "QD-063"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "核心功能免帳號",
+    "status": "已實作",
+    "implementation": "app.js",
+    "verification": "demo DOM；真日誌 E2E 待驗",
+    "id": "QD-064"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "資料本機優先，無伺服器健康儲存",
+    "status": "已實作",
+    "implementation": "lib/storage.js",
+    "verification": "Node 架構檢查；瀏覽器 E2E 待驗",
+    "id": "QD-065"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "先加密再持久保存，解鎖密鑰只在記憶體",
+    "status": "已實作待專業審閱",
+    "implementation": "lib/crypto.js; lib/storage.js",
+    "verification": "Node crypto；browser 待驗",
+    "id": "QD-066"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "獨立鎖定、背景隱私遮罩",
+    "status": "已實作待實機驗收",
+    "implementation": "app.js",
+    "verification": "原始碼；真實背景切換待驗",
+    "id": "QD-067"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "完整加密備份、驗證後還原",
+    "status": "已實作待整合驗收",
+    "implementation": "lib/storage.js; app.js",
+    "verification": "Node crypto；下載還原 E2E blocked",
+    "id": "QD-068"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "多分頁不得覆寫他人最新版本",
+    "status": "已實作待整合驗收",
+    "implementation": "lib/storage.js",
+    "verification": "CAS 原始碼；真實 IDB E2E blocked",
+    "id": "QD-069"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "日期／欄位可選明文 TXT CSV HTML",
+    "status": "已實作",
+    "implementation": "domain/export.js; components/settings.js",
+    "verification": "Node + DOM",
+    "id": "QD-070"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "備註與背景預設不分享",
+    "status": "已實作",
+    "implementation": "components/settings.js; domain/export.js",
+    "verification": "Node + DOM",
+    "id": "QD-071"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "單筆與全部刪除，包括本機來源與歷史",
+    "status": "已實作待整合驗收",
+    "implementation": "domain/model.js; lib/storage.js; app.js",
+    "verification": "Node 部分；IDB E2E blocked",
+    "id": "QD-072"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "衍生模式可重新計算／刪除，不另存秘密分析",
+    "status": "已實作",
+    "implementation": "domain/analysis.js",
+    "verification": "純函式；無服務端模型",
+    "id": "QD-073"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "外部副本也能遠端完整刪除",
+    "status": "不可承諾",
+    "implementation": "docs/THREAT_MODEL.md",
+    "verification": "已下載備份／匯出／行事曆由使用者管理",
+    "id": "QD-074"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "雲端 E2EE 同步",
+    "status": "後續",
+    "implementation": "docs/ROADMAP.md",
+    "verification": "本版沒有任何同步服務",
+    "id": "QD-075"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "不放廣告、session replay、分析 SDK、遠端模型",
+    "status": "已實作邊界",
+    "implementation": "src; scripts/check.mjs",
+    "verification": "靜態檢查；真實網路待驗",
+    "id": "QD-076"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "不蒐集 GPS、通訊錄、廣告 ID",
+    "status": "已實作邊界",
+    "implementation": "src",
+    "verification": "無相關權限或 API",
+    "id": "QD-077"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "不要求性生活、懷孕意願、流產等資訊",
+    "status": "已實作邊界",
+    "implementation": "components/*.js",
+    "verification": "無此表單",
+    "id": "QD-078"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "研究捐贈、行銷、分享分別同意",
+    "status": "部分／後續",
+    "implementation": "components/settings.js; docs/ROADMAP.md",
+    "verification": "只有自主明文分享；沒有研究或行銷上傳",
+    "id": "QD-079"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "不把敏感內容寫入 crash log",
+    "status": "已實作設計",
+    "implementation": "src; tests",
+    "verification": "無 crash SDK；仍需主機審查",
+    "id": "QD-080"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "個資法律合規",
+    "status": "需外部審閱",
+    "implementation": "docs/THREAT_MODEL.md",
+    "verification": "未宣稱台灣／GDPR／HIPAA 認證",
+    "id": "QD-081"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "可及 PDF 匯出",
+    "status": "後續",
+    "implementation": "docs/ROADMAP.md",
+    "verification": "已有 HTML/TXT/CSV；未產生標記 PDF",
+    "id": "QD-082"
+  },
+  {
+    "group": "E. 隱私、保管與平台",
+    "origin": "A1",
+    "requirement": "QR、經期用品音訊、影像辨識",
+    "status": "後續／排除核心",
+    "implementation": "docs/ROADMAP.md",
+    "verification": "無攝影要求、無私密圖像處理",
+    "id": "QD-083"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A2",
+    "requirement": "選配提醒時間，可關閉、不加重症狀期負擔",
+    "status": "已實作",
+    "implementation": "domain/reminders.js; components/settings.js",
+    "verification": "Node",
+    "id": "QD-084"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A2",
+    "requirement": "一天一次／隔天、延後 2 小時、暫停 7 天",
+    "status": "已實作",
+    "implementation": "domain/reminders.js",
+    "verification": "Node；頁面開啟且解鎖時",
+    "id": "QD-085"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A2",
+    "requirement": "所有原先提出的今晚／明天／起床等提醒選項",
+    "status": "部分",
+    "implementation": "components/settings.js; docs/ROADMAP.md",
+    "verification": "已有自訂時刻、延後與暫停；事件錨點後續",
+    "id": "QD-086"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A1/A2",
+    "requirement": "鎖定畫面中性通知／快速動作",
+    "status": "平台限制／替代",
+    "implementation": "domain/export.js; docs/DEPLOYMENT.md",
+    "verification": "沒有系統推播；中性 ICS 可自行匯入",
+    "id": "QD-087"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A1/A2",
+    "requirement": "關閉網頁後仍可靠定時提醒",
+    "status": "未實作／不可假裝",
+    "implementation": "docs/DEPLOYMENT.md",
+    "verification": "需其他平台能力或推播服務",
+    "id": "QD-088"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A2",
+    "requirement": "主畫面捷徑／PWA",
+    "status": "有限",
+    "implementation": "public/manifest.webmanifest; scripts/build.mjs",
+    "verification": "PWA 殼；安裝与離線實機待測",
+    "id": "QD-089"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A1/A2",
+    "requirement": "按下才語音輸入、不持續收音",
+    "status": "條件式實作",
+    "implementation": "lib/speech.js; components/editor.js",
+    "verification": "能力偵測測試；實際語音待驗",
+    "id": "QD-090"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A1/A2",
+    "requirement": "裝置端 zh-TW，不外送、不存原音",
+    "status": "條件式實作",
+    "implementation": "lib/speech.js",
+    "verification": "不支援就禁用，無雲端 fallback",
+    "id": "QD-091"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A1/A2",
+    "requirement": "辨識內容先確認，可取消再寫入",
+    "status": "已實作待實機驗收",
+    "implementation": "components/editor.js",
+    "verification": "只加入備註；不自動解析出血",
+    "id": "QD-092"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A1",
+    "requirement": "耳機限定與外接喇叭精準路由控制",
+    "status": "不可跨瀏覽器保證",
+    "implementation": "docs/THREAT_MODEL.md",
+    "verification": "不自動 TTS；使用者控制讀屏聲音",
+    "id": "QD-093"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A2",
+    "requirement": "手錶、原生 Shortcuts/App Intents／通知回覆",
+    "status": "後續",
+    "implementation": "docs/ROADMAP.md",
+    "verification": "純 PWA 不冒稱原生整合",
+    "id": "QD-094"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A2",
+    "requirement": "睡眠、活動、心率、用藥被動資料",
+    "status": "後續",
+    "implementation": "docs/ROADMAP.md",
+    "verification": "目前手動背景；未取得平台健康資料",
+    "id": "QD-095"
+  },
+  {
+    "group": "F. 提醒、語音與整合",
+    "origin": "A2",
+    "requirement": "被動資料只作背景，不判定疲倦／月經",
+    "status": "已實作邊界",
+    "implementation": "domain/analysis.js",
+    "verification": "根本不以被動訊號推論",
+    "id": "QD-096"
+  },
+  {
+    "group": "G. 交付、研究與驗收",
+    "origin": "U3",
+    "requirement": "提供完整專案與可部署 dist",
+    "status": "已交付",
+    "implementation": "README.md; dist",
+    "verification": "build + ZIP 完整性",
+    "id": "QD-097"
+  },
+  {
+    "group": "G. 交付、研究與驗收",
+    "origin": "U3",
+    "requirement": "截至 2026-09-06 官方／原始研究查核",
+    "status": "已交付",
+    "implementation": "docs/research",
+    "verification": "35 組來源，區分年代與效度",
+    "id": "QD-098"
+  },
+  {
+    "group": "G. 交付、研究與驗收",
+    "origin": "U3",
+    "requirement": "前兩答所有重要需求与數字可追溯",
+    "status": "已交付",
+    "implementation": "docs/conversation/KEY_INFORMATION.md",
+    "verification": "重點／數字台帳；非平台逐字匯出",
+    "id": "QD-099"
+  },
+  {
+    "group": "G. 交付、研究與驗收",
+    "origin": "U3",
+    "requirement": "Claude Code 官方風格接續 prompt",
+    "status": "已交付",
+    "implementation": "CLAUDE.md; .claude; prompts",
+    "verification": "官方 schema／文件查核；未執行 Claude Code",
+    "id": "QD-100"
+  },
+  {
+    "group": "G. 交付、研究與驗收",
+    "origin": "A1/A2",
+    "requirement": "至少跨 2–3 個週期共創試用",
+    "status": "待進行",
+    "implementation": "docs/ACCESSIBILITY_ACCEPTANCE.md",
+    "verification": "沒有捏造參與者與成效",
+    "id": "QD-101"
+  },
+  {
+    "group": "G. 交付、研究與驗收",
+    "origin": "A1/A2",
+    "requirement": "負擔、獨立操作、補登、洩露與尊重感評估",
+    "status": "已規劃待執行",
+    "implementation": "docs/ACCESSIBILITY_ACCEPTANCE.md",
+    "verification": "不預設蒐集遙測",
+    "id": "QD-102"
+  },
+  {
+    "group": "G. 交付、研究與驗收",
+    "origin": "U3",
+    "requirement": "測試真實、成功／blocked 不混寫",
+    "status": "已交付",
+    "implementation": "docs/TEST_REPORT.md; evidence",
+    "verification": "53 Node / 31 DOM；origin E2E blocked",
+    "id": "QD-103"
+  }
+]

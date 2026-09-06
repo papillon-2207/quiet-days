@@ -1,0 +1,317 @@
+[
+  {
+    "id": "R01",
+    "title": "RNIB：視障與月經健康書面證據",
+    "url": "https://committees.parliament.uk/writtenevidence/162706/pdf/",
+    "publication_or_status": "2026-02 提交；描述 2024 研究",
+    "type": "使用者組織的一手研究／國會提交",
+    "application_and_limit": "支持出血起訖不易確認、求助可能涉及隱私、自主與共創的重要性。小規模質性證據，不能推論所有視障女性，也沒有驗證本 App。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R02",
+    "title": "Personal Health Data Tracking by Blind and Low-Vision People",
+    "url": "https://www.jmir.org/2023/1/e43917/",
+    "publication_or_status": "2023",
+    "type": "原始調查研究",
+    "application_and_limit": "健康資料追蹤的可及性與資訊理解障礙；支持語意控制、文字等價資訊、減少協助依賴。不等於任何實作已通過讀屏驗收。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R03",
+    "title": "RCOG：Managing premenstrual syndrome",
+    "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/managing-premenstrual-syndrome-pms/",
+    "publication_or_status": "查閱現行病人資訊",
+    "type": "專業醫學會",
+    "application_and_limit": "至少兩個週期的日誌可幫助 PMS 評估；個人快速標記與事後補登不是診斷本身。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R04",
+    "title": "Developing a Mood and Menstrual Tracking App for People With PMDD",
+    "url": "https://formative.jmir.org/2024/1/e59333",
+    "publication_or_status": "2024-12-24",
+    "type": "原始人本設計研究",
+    "application_and_limit": "四次個別訪談、兩場工作坊合計八名工作坊參與者，形成 21 項設計需求。易用、廣泛症狀、合適語言與使用者利益很重要；非介入成效試驗。PMDD 涉及至少兩個有症狀週期的前瞻性每日評分，不能用隨意縮短量表取代。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R05",
+    "title": "FDA：Patient-Reported Outcome Measures guidance",
+    "url": "https://www.fda.gov/media/77832/download",
+    "publication_or_status": "2009-12",
+    "type": "監管機構原始指引",
+    "application_and_limit": "回憶期間、題目／選項／施測方式與量測效度相關。此處借用量測方法原則，並非聲稱藥品標示指引直接適用所有消費 App。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R06",
+    "title": "NHS：Ectopic pregnancy symptoms",
+    "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/symptoms/",
+    "publication_or_status": "查閱現行資訊",
+    "type": "公共醫療服務",
+    "application_and_limit": "用於安全說明：有懷孕可能時的腹痛、出血、肩尖痛、暈眩等不能忽視。不主動蒐集性生活或推定懷孕。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R07",
+    "title": "American Migraine Foundation：Thunderclap Headaches",
+    "url": "https://americanmigrainefoundation.org/resource-library/thunderclap-headaches/",
+    "publication_or_status": "查閱現行資訊",
+    "type": "專業醫學組織病人資訊",
+    "application_and_limit": "突然迅速達最痛的頭痛需緊急評估。本 App 不提供排除疾病或自行診斷。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R08",
+    "title": "Mayo Clinic：Heavy menstrual bleeding",
+    "url": "https://www.mayoclinic.org/diseases-conditions/menorrhagia/symptoms-causes/syc-20352829",
+    "publication_or_status": "現行頁面；搜尋顯示 2026 更新",
+    "type": "醫療機構",
+    "application_and_limit": "大量出血與就醫時機的安全文字依據。用品更換頻率不等於精確失血量，也不可單獨診斷。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R09",
+    "title": "衛生福利部：1925 安心專線",
+    "url": "https://dep.mohw.gov.tw/DOMHAOH/cp-4906-54077-107.html",
+    "publication_or_status": "查閱現行資訊",
+    "type": "政府",
+    "application_and_limit": "台灣情緒支持聯絡資訊。危及立即安全仍需當地急救；不預設使用者現在有自傷風險。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R10",
+    "title": "內政部消防署：119",
+    "url": "https://www.nfa.gov.tw/cht/index.php?article_id=795&code=list&flag=detail&ids=66",
+    "publication_or_status": "查閱現行資訊",
+    "type": "政府",
+    "application_and_limit": "台灣緊急救護電話。其他地區需使用當地號碼，tel 連結取決於裝置是否能撥號。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R11",
+    "title": "W3C：WCAG 2.2",
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "publication_or_status": "Recommendation 現行版本",
+    "type": "規範制定者",
+    "application_and_limit": "標籤、鍵盤、對比、焦點、重排、目標尺寸與驗證等基線。自動檢查不能宣稱完整符合。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R12",
+    "title": "W3C：Status Messages 4.1.3",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+    "publication_or_status": "查閱現行解說",
+    "type": "規範原始解說",
+    "application_and_limit": "儲存與錯誤需能由輔助科技取得；避免只用視覺 toast。解說本身不取代規範。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R13",
+    "title": "W3C：Accessible Authentication (Minimum)",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html",
+    "publication_or_status": "查閱現行解說",
+    "type": "規範原始解說",
+    "application_and_limit": "密語可貼上、可用密碼管理器，不要求不必要的認知測驗。本地密語仍需使用者理解遺失風險。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R14",
+    "title": "W3C：Making Content Usable for People with Cognitive and Learning Disabilities",
+    "url": "https://www.w3.org/TR/coga-usable/",
+    "publication_or_status": "Working Group Note",
+    "type": "認知無障礙補充指引",
+    "application_and_limit": "減少記憶負擔、短任務、可返回、不丟資料。支持漸進揭露，不是生理期專屬臨床試驗。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R15",
+    "title": "MDN：JavaScript modules",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+    "publication_or_status": "查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "使用原生 ES modules、相對路徑與正確 MIME；本版不依賴框架或 CDN。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R16",
+    "title": "MDN：IndexedDB API",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API",
+    "publication_or_status": "查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "瀏覽器結構化儲存；同源作用域不是所有裝置同步。僅保存已加密 envelope。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R17",
+    "title": "MDN：IDBTransaction",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction",
+    "publication_or_status": "查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "交易生命週期與原子性；加密完成後才開 readwrite transaction，在同交易比較 revision。仍待真實瀏覽器 E2E。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R18",
+    "title": "MDN：StorageManager.persist",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/StorageManager/persist",
+    "publication_or_status": "查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "持久儲存申請可能被拒絕；不保證永不遺失。加密備份仍必要。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R19",
+    "title": "MDN：Using Service Workers",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers",
+    "publication_or_status": "查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "快取靜態應用殼、管理更新生命週期；不自動等於可靠背景定時器。本版不強制 skipWaiting。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R20",
+    "title": "MDN：Push API",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Push_API",
+    "publication_or_status": "查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "標準 Web Push 涉及推播服務與服務端發送；不能把只開頁面的定時器包裝成關頁後準時提醒。MVP 使用站內提醒與中性 ICS。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R21",
+    "title": "MDN：Web Crypto API",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API",
+    "publication_or_status": "查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "提供低階加密原語，也提醒不易正確使用、需要專家評估。本版採 PBKDF2/AES-GCM，不聲稱安全稽核或端到端雲端同步。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R22",
+    "title": "OWASP：Password Storage Cheat Sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html",
+    "publication_or_status": "查閱現行文件",
+    "type": "安全標準實務組織原始文件",
+    "application_and_limit": "PBKDF2-HMAC-SHA256 的 600,000 次設定提供參考；這裡用於密語衍生加密密鑰，不聲稱相同於伺服器密碼儲存、更不聲稱 FIPS 認證。低階手機耗時需另測。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R23",
+    "title": "OWASP：Cryptographic Storage Cheat Sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html",
+    "publication_or_status": "查閱現行文件",
+    "type": "安全原始指引",
+    "application_and_limit": "驗證式加密、適當隨機性與密鑰管理。不因加密就免除來源信任、解鎖資料與備份管理風險。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R24",
+    "title": "MDN：SpeechRecognition.processLocally",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/processLocally",
+    "publication_or_status": "實驗性 API；查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "processLocally 明示本機辨識；預設不可假設本機。MVP 不支援時關閉語音，不退回雲端。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R25",
+    "title": "MDN：SpeechRecognition.available",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/available_static",
+    "publication_or_status": "實驗性 API；查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "檢查指定語言與本機模式可用性；本版要求 zh-TW 已可用，不自動下載語言包。真實中文／麥克風尚未驗證。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R26",
+    "title": "Node.js：Test runner",
+    "url": "https://nodejs.org/api/test.html",
+    "publication_or_status": "查閱現行文件；實測 Node 22.16.0",
+    "type": "官方技術文件",
+    "application_and_limit": "使用內建 node:test 與 assert，避免因安裝第三方套件才可驗證資料邏輯。本版沒有宣稱使用最新 Node 主版本。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R27",
+    "title": "Playwright：Python introduction",
+    "url": "https://playwright.dev/python/docs/intro",
+    "publication_or_status": "查閱現行文件；本機 1.57.0",
+    "type": "官方技術文件",
+    "application_and_limit": "可執行 browser test 與控制瀏覽器；實際頁面受管理政策封鎖時必須回報 blocked。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R28",
+    "title": "Playwright：Accessibility testing",
+    "url": "https://playwright.dev/docs/accessibility-testing",
+    "publication_or_status": "查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "自動掃描只發現部分問題，不能取代手動與使用者測試。本版沒有安裝 axe 或聲稱 axe 全過。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R29",
+    "title": "Claude Code：Best practices",
+    "url": "https://code.claude.com/docs/en/best-practices",
+    "publication_or_status": "2026-09-06 查閱動態官方文件",
+    "type": "產品官方",
+    "application_and_limit": "採小而清楚的 CLAUDE.md、先探索與計畫、明確檔案脈絡、可執行驗證。專案附任務和證據，不要求模型自稱完成。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R30",
+    "title": "Claude Code：Memory",
+    "url": "https://code.claude.com/docs/en/memory",
+    "publication_or_status": "2026-09-06 查閱動態官方文件",
+    "type": "產品官方",
+    "application_and_limit": "總則與 paths 範圍規則分開，詳細研究按需讀取；工作指引不等於權限或安全沙箱。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R31",
+    "title": "Claude Code：Skills",
+    "url": "https://code.claude.com/docs/en/skills",
+    "publication_or_status": "2026-09-06 查閱動態官方文件",
+    "type": "產品官方",
+    "application_and_limit": "本 repo 提供手動 /verify-release，disable-model-invocation: true；不自動上傳、部署或安裝服務，也不關閉工具權限控制。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R32",
+    "title": "EMA compliance in movement behavior research",
+    "url": "https://mhealth.jmir.org/2025/1/e52887",
+    "publication_or_status": "2025",
+    "type": "系統性回顧",
+    "application_and_limit": "原討論四捨五入 91% 對 77% 來自青少年／新興成人活動行為研究，不是視障女性月經產品的成效。可作減少通知負擔的參考，不能承諾相同完成率或因果。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R33",
+    "title": "CycleWise human-centered design study protocol",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342586",
+    "publication_or_status": "2026-03-09",
+    "type": "研究計畫書",
+    "application_and_limit": "支持患者與臨床人員共同設計的研究方向；protocol 不等於已證實有效，也未驗證本版演算法。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R34",
+    "title": "Netlify：File-based configuration / Custom headers",
+    "url": "https://docs.netlify.com/build/configure-builds/file-based-configuration/",
+    "publication_or_status": "查閱現行文件",
+    "type": "產品官方",
+    "application_and_limit": "netlify.toml 可指定 build/publish；_headers 放在發布目錄。補充：https://docs.netlify.com/manage/routing/headers/ 。配置已提供，未實際發布 Netlify 站台。",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "R35",
+    "title": "MDN：CSP frame-ancestors",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/frame-ancestors",
+    "publication_or_status": "查閱現行文件",
+    "type": "官方技術文件",
+    "application_and_limit": "frame-ancestors 不支援 CSP meta；正式主機需 HTTP header。此項無法只靠 HTML 完整保證。",
+    "accessed": "2026-09-06"
+  }
+]

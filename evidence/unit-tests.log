@@ -1,0 +1,332 @@
+
+> quiet-days@0.1.0 test
+> node --test tests/unit/*.test.mjs
+
+TAP version 13
+# Subtest: AES-GCM encrypted roundtrip preserves complete validated payload
+ok 1 - AES-GCM encrypted roundtrip preserves complete validated payload
+  ---
+  duration_ms: 156.637978
+  type: 'test'
+  ...
+# Subtest: 600000 iteration PBKDF2 key is nonextractable
+ok 2 - 600000 iteration PBKDF2 key is nonextractable
+  ---
+  duration_ms: 0.197157
+  type: 'test'
+  ...
+# Subtest: every sealing gets fresh IV and ciphertext
+ok 3 - every sealing gets fresh IV and ciphertext
+  ---
+  duration_ms: 1.157501
+  type: 'test'
+  ...
+# Subtest: wrong passphrase never decrypts
+ok 4 - wrong passphrase never decrypts
+  ---
+  duration_ms: 136.068475
+  type: 'test'
+  ...
+# Subtest: revision and vault identity are authenticated
+ok 5 - revision and vault identity are authenticated
+  ---
+  duration_ms: 291.247207
+  type: 'test'
+  ...
+# Subtest: corrupted ciphertext fails authentication
+ok 6 - corrupted ciphertext fails authentication
+  ---
+  duration_ms: 143.744215
+  type: 'test'
+  ...
+# Subtest: unsupported KDF prevents expensive attacker-chosen work
+ok 7 - unsupported KDF prevents expensive attacker-chosen work
+  ---
+  duration_ms: 0.592549
+  type: 'test'
+  ...
+# Subtest: malformed base64 and short IV are rejected
+ok 8 - malformed base64 and short IV are rejected
+  ---
+  duration_ms: 0.43917
+  type: 'test'
+  ...
+# Subtest: short passwords rejected; spaces and Chinese accepted
+ok 9 - short passwords rejected; spaces and Chinese accepted
+  ---
+  duration_ms: 0.886195
+  type: 'test'
+  ...
+# Subtest: demo writes are serializable and do not invoke persistent IndexedDB
+ok 10 - demo writes are serializable and do not invoke persistent IndexedDB
+  ---
+  duration_ms: 1.564709
+  type: 'test'
+  ...
+# Subtest: locking cancels queued writes and clears key references
+ok 11 - locking cancels queued writes and clears key references
+  ---
+  duration_ms: 0.321327
+  type: 'test'
+  ...
+# Subtest: strict civil-date validation including leap years
+ok 12 - strict civil-date validation including leap years
+  ---
+  duration_ms: 1.77652
+  type: 'test'
+  ...
+# Subtest: calendar day math crosses months without DST offsets
+ok 13 - calendar day math crosses months without DST offsets
+  ---
+  duration_ms: 0.198764
+  type: 'test'
+  ...
+# Subtest: today is a Taipei civil date, not UTC substring
+ok 14 - today is a Taipei civil date, not UTC substring
+  ---
+  duration_ms: 70.915582
+  type: 'test'
+  ...
+# Subtest: same day does not claim momentary recording
+ok 15 - same day does not claim momentary recording
+  ---
+  duration_ms: 0.258963
+  type: 'test'
+  ...
+# Subtest: next-day and later recall preserved
+ok 16 - next-day and later recall preserved
+  ---
+  duration_ms: 0.113084
+  type: 'test'
+  ...
+# Subtest: minimal capture has unknown bleeding and no invented symptom
+ok 17 - minimal capture has unknown bleeding and no invented symptom
+  ---
+  duration_ms: 22.116297
+  type: 'test'
+  ...
+# Subtest: future new record is rejected
+ok 18 - future new record is rejected
+  ---
+  duration_ms: 0.261527
+  type: 'test'
+  ...
+# Subtest: four capture states remain distinct
+ok 19 - four capture states remain distinct
+  ---
+  duration_ms: 0.805176
+  type: 'test'
+  ...
+# Subtest: missing, skipped, unasked, and uncertainty are not absence
+ok 20 - missing, skipped, unasked, and uncertainty are not absence
+  ---
+  duration_ms: 1.788388
+  type: 'test'
+  ...
+# Subtest: only an explicit absence is counted as absence
+ok 21 - only an explicit absence is counted as absence
+  ---
+  duration_ms: 1.049128
+  type: 'test'
+  ...
+# Subtest: symptom edit upgrades partial record and stores provenance
+ok 22 - symptom edit upgrades partial record and stores provenance
+  ---
+  duration_ms: 0.718846
+  type: 'test'
+  ...
+# Subtest: confirming retrospectively does not rewrite original provenance
+ok 23 - confirming retrospectively does not rewrite original provenance
+  ---
+  duration_ms: 1.214836
+  type: 'test'
+  ...
+# Subtest: explicit positive symptom cannot coexist with global absence
+ok 24 - explicit positive symptom cannot coexist with global absence
+  ---
+  duration_ms: 0.445313
+  type: 'test'
+  ...
+# Subtest: period start requires confirmed bleeding
+ok 25 - period start requires confirmed bleeding
+  ---
+  duration_ms: 0.357097
+  type: 'test'
+  ...
+# Subtest: symptoms never create a cycle anchor
+ok 26 - symptoms never create a cycle anchor
+  ---
+  duration_ms: 0.572646
+  type: 'test'
+  ...
+# Subtest: possible and spotting are never cycle starts
+ok 27 - possible and spotting are never cycle starts
+  ---
+  duration_ms: 1.490155
+  type: 'test'
+  ...
+# Subtest: undo restores previous data without mutating caller
+ok 28 - undo restores previous data without mutating caller
+  ---
+  duration_ms: 0.980459
+  type: 'test'
+  ...
+# Subtest: undo first quick marker removes it
+ok 29 - undo first quick marker removes it
+  ---
+  duration_ms: 0.235364
+  type: 'test'
+  ...
+# Subtest: schema rejects additional top-level and future-version fields
+ok 30 - schema rejects additional top-level and future-version fields
+  ---
+  duration_ms: 0.152818
+  type: 'test'
+  ...
+# Subtest: schema rejects invalid symptoms, excessive strings, and noninteger product counts
+ok 31 - schema rejects invalid symptoms, excessive strings, and noninteger product counts
+  ---
+  duration_ms: 0.8667
+  type: 'test'
+  ...
+# Subtest: synthetic sample is valid and clearly a source fixture
+ok 32 - synthetic sample is valid and clearly a source fixture
+  ---
+  duration_ms: 12.041995
+  type: 'test'
+  ...
+# Subtest: at least three intervals required for an estimate
+ok 33 - at least three intervals required for an estimate
+  ---
+  duration_ms: 3.283935
+  type: 'test'
+  ...
+# Subtest: three confirmed complete intervals produce transparent range
+ok 34 - three confirmed complete intervals produce transparent range
+  ---
+  duration_ms: 2.576882
+  type: 'test'
+  ...
+# Subtest: gaps pause estimates instead of inventing long cycles
+ok 35 - gaps pause estimates instead of inventing long cycles
+  ---
+  duration_ms: 1.758301
+  type: 'test'
+  ...
+# Subtest: widely varying intervals and opted-out estimates are paused
+ok 36 - widely varying intervals and opted-out estimates are paused
+  ---
+  duration_ms: 5.315736
+  type: 'test'
+  ...
+# Subtest: expired range does not create the next anchor
+ok 37 - expired range does not create the next anchor
+  ---
+  duration_ms: 3.299882
+  type: 'test'
+  ...
+# Subtest: symptom denominators exclude unobserved days
+ok 38 - symptom denominators exclude unobserved days
+  ---
+  duration_ms: 5.000226
+  type: 'test'
+  ...
+# Subtest: retrospective observations are disclosed in patterns
+ok 39 - retrospective observations are disclosed in patterns
+  ---
+  duration_ms: 5.627099
+  type: 'test'
+  ...
+# Subtest: export field scope excludes note and context from prose and metadata
+ok 40 - export field scope excludes note and context from prose and metadata
+  ---
+  duration_ms: 3.073447
+  type: 'test'
+  ...
+# Subtest: CSV neutralizes formula prefixes, quotes, and leading whitespace
+ok 41 - CSV neutralizes formula prefixes, quotes, and leading whitespace
+  ---
+  duration_ms: 4.961577
+  type: 'test'
+  ...
+# Subtest: selected date range is enforced
+ok 42 - selected date range is enforced
+  ---
+  duration_ms: 0.842337
+  type: 'test'
+  ...
+# Subtest: calendar has neutral wording and finite reminders
+ok 43 - calendar has neutral wording and finite reminders
+  ---
+  duration_ms: 3.131949
+  type: 'test'
+  ...
+# Subtest: reminders are opt-in, limited, and respect completed entries
+ok 44 - reminders are opt-in, limited, and respect completed entries
+  ---
+  duration_ms: 1.290484
+  type: 'test'
+  ...
+# Subtest: snooze and pause are respected without interpreting ignored reminders
+ok 45 - snooze and pause are respected without interpreting ignored reminders
+  ---
+  duration_ms: 0.185227
+  type: 'test'
+  ...
+# Subtest: no recognizer means no microphone start or cloud fallback
+ok 46 - no recognizer means no microphone start or cloud fallback
+  ---
+  duration_ms: 1.33287
+  type: 'test'
+  ...
+# Subtest: legacy cloud-only speech implementation is rejected
+ok 47 - legacy cloud-only speech implementation is rejected
+  ---
+  duration_ms: 0.134122
+  type: 'test'
+  ...
+# Subtest: local availability query always explicitly requests local zh-TW
+ok 48 - local availability query always explicitly requests local zh-TW
+  ---
+  duration_ms: 2.790165
+  type: 'test'
+  ...
+# Subtest: server returns modules with JavaScript MIME and strict policy headers
+ok 49 - server returns modules with JavaScript MIME and strict policy headers
+  ---
+  duration_ms: 82.827188
+  type: 'test'
+  ...
+# Subtest: server never exposes source docs or private backup filenames
+ok 50 - server never exposes source docs or private backup filenames
+  ---
+  duration_ms: 6.911316
+  type: 'test'
+  ...
+# Subtest: server rejects writing requests
+ok 51 - server rejects writing requests
+  ---
+  duration_ms: 7.830385
+  type: 'test'
+  ...
+# Subtest: no remote scripts, fonts, runtime dependencies or default trackers
+ok 52 - no remote scripts, fonts, runtime dependencies or default trackers
+  ---
+  duration_ms: 1.562204
+  type: 'test'
+  ...
+# Subtest: service worker build defines only static assets and does not force activation
+ok 53 - service worker build defines only static assets and does not force activation
+  ---
+  duration_ms: 0.905384
+  type: 'test'
+  ...
+1..53
+# tests 53
+# suites 0
+# pass 53
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1063.372626

@@ -1,0 +1,143 @@
+{
+  "mode": "isolated-component-DOM; not served-origin E2E",
+  "browser": "144.0.7559.96",
+  "seconds": 5.0,
+  "checks": [
+    {
+      "name": "auth supports labelled passphrase and confirmation",
+      "status": "passed"
+    },
+    {
+      "name": "passphrase permits paste and password manager autocomplete",
+      "status": "passed"
+    },
+    {
+      "name": "safety help available before unlocking",
+      "status": "passed"
+    },
+    {
+      "name": "safety dialog has no duplicate IDs",
+      "status": "passed"
+    },
+    {
+      "name": "native dialog restores focus on Escape",
+      "status": "passed"
+    },
+    {
+      "name": "blank demo is explicit and initial focus reaches capture",
+      "status": "passed"
+    },
+    {
+      "name": "single-action capture completes without required symptom fields",
+      "status": "passed"
+    },
+    {
+      "name": "capture focus remains on the activated control",
+      "status": "passed"
+    },
+    {
+      "name": "first marker can be undone",
+      "status": "passed"
+    },
+    {
+      "name": "uncertain capture invents neither bleeding nor symptom",
+      "status": "passed"
+    },
+    {
+      "name": "optional symptom impact and timing autosave",
+      "status": "passed"
+    },
+    {
+      "name": "safety remains accessible while a save has failed",
+      "status": "passed"
+    },
+    {
+      "name": "failed older autosave never overwrites newer pending text on retry",
+      "status": "passed"
+    },
+    {
+      "name": "navigation flushes pending text before leaving editor",
+      "status": "passed"
+    },
+    {
+      "name": "contradictory global absence is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "backfill is explicitly labelled as recall",
+      "status": "passed"
+    },
+    {
+      "name": "past dates cannot select just now",
+      "status": "passed"
+    },
+    {
+      "name": "backfilled symptom records next-day source",
+      "status": "passed"
+    },
+    {
+      "name": "start date cannot be set without confirmed bleeding",
+      "status": "passed"
+    },
+    {
+      "name": "confirmed onset enables optional neutral previous-days review",
+      "status": "passed"
+    },
+    {
+      "name": "post-onset recall source remains distinct",
+      "status": "passed"
+    },
+    {
+      "name": "default sharing excludes private free notes",
+      "status": "passed"
+    },
+    {
+      "name": "opted-in note renders literal text, not HTML",
+      "status": "passed"
+    },
+    {
+      "name": "large text and high-contrast preferences apply",
+      "status": "passed"
+    },
+    {
+      "name": "preferred term appears in diary content",
+      "status": "passed"
+    },
+    {
+      "name": "320px viewport with enlarged text does not horizontally overflow",
+      "status": "passed"
+    },
+    {
+      "name": "quick targets are at least 48x48 CSS px",
+      "status": "passed"
+    },
+    {
+      "name": "insights contain text-based uncertainty instead of inaccessible chart-only output",
+      "status": "passed"
+    },
+    {
+      "name": "current page has unique element IDs",
+      "status": "passed"
+    },
+    {
+      "name": "interactive controls have names or associated labels",
+      "status": "passed"
+    },
+    {
+      "name": "no JavaScript errors during tested interactions",
+      "status": "passed"
+    }
+  ],
+  "page_errors": [],
+  "not_tested": [
+    "native ESM loading",
+    "CSP enforcement",
+    "IndexedDB transactions",
+    "encryption in browser",
+    "PWA/offline worker",
+    "VoiceOver",
+    "TalkBack",
+    "actual users",
+    "real Chinese local speech"
+  ]
+}
